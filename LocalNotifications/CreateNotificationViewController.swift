@@ -34,6 +34,9 @@ class CreateNotificationViewController: UIViewController {
         content.title = titleTextField.text ?? "No title"
         content.body = "Local Notifications is awesome when used appropriatly"
         content.subtitle = "Learning Local Notifications"
+        content.sound = .default // only works in the background and the app is not on silent - please test on device
+        // TODO: you can also import soind file (mp3) no needd AVFoundation:
+        // content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "file.mp3"))
         
         // step 2: create identifier
         // if I would use 1 notification we could hardcode the ID for htat
@@ -77,7 +80,9 @@ class CreateNotificationViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        createLicalNotification()
         delegate?.didCreateNotification(self)
+        dismiss(animated: true)
     }
     
     
