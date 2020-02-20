@@ -15,6 +15,7 @@
 		0F4DDBF523FEE1390091F5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DDBF323FEE1390091F5F9 /* LaunchScreen.storyboard */; };
 		0F4DDBFD23FEE8AA0091F5F9 /* CreateNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DDBFC23FEE8AA0091F5F9 /* CreateNotificationViewController.swift */; };
 		0F4DDBFF23FEEB0B0091F5F9 /* PendingNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DDBFE23FEEB0B0091F5F9 /* PendingNotification.swift */; };
+		0F4DDC0323FEF42E0091F5F9 /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DDC0223FEF42E0091F5F9 /* Unknown.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0F4DDBF623FEE1390091F5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4DDBFC23FEE8AA0091F5F9 /* CreateNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationViewController.swift; sourceTree = "<group>"; };
 		0F4DDBFE23FEEB0B0091F5F9 /* PendingNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingNotification.swift; sourceTree = "<group>"; };
+		0F4DDC0223FEF42E0091F5F9 /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				0F4DDBEA23FEE1320091F5F9 /* SceneDelegate.swift */,
 				0F4DDBEC23FEE1320091F5F9 /* NotificationsViewController.swift */,
 				0F4DDBFC23FEE8AA0091F5F9 /* CreateNotificationViewController.swift */,
+				0F4DDC0223FEF42E0091F5F9 /* Unknown.jpeg */,
 				0F4DDBFE23FEEB0B0091F5F9 /* PendingNotification.swift */,
 				0F4DDBEE23FEE1320091F5F9 /* Main.storyboard */,
 				0F4DDBF123FEE1390091F5F9 /* Assets.xcassets */,
@@ -134,6 +137,7 @@
 				0F4DDBF523FEE1390091F5F9 /* LaunchScreen.storyboard in Resources */,
 				0F4DDBF223FEE1390091F5F9 /* Assets.xcassets in Resources */,
 				0F4DDBF023FEE1320091F5F9 /* Main.storyboard in Resources */,
+				0F4DDC0323FEF42E0091F5F9 /* Unknown.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

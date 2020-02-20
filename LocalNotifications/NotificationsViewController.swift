@@ -14,15 +14,25 @@ class NotificationsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var notifications = [String]()
+    private var notifications = [UNNotificationRequest]()
     
     private let center =
         UNUserNotificationCenter.current()
     
+    private let pendingNotification = PendingNotification()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        loadNotifications()
         checkForNotificationAuthorization()
+    }
+    
+    private func loadNotifications() {
+        pendingNotification.getPendingNotifications {(requests) in
+            self.notifications = requests
+            
+        }
     }
     
     private func checkForNotificationAuthorization() {
@@ -53,8 +63,8 @@ class NotificationsViewController: UIViewController {
 
 extension NotificationsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return notifications.count
-        return 10
+        return notifications.count
+       // return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
